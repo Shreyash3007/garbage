@@ -1,0 +1,51 @@
+{
+  "name": "garbage-watch",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "firebase:deploy": "firebase deploy",
+    "firebase:deploy:hosting": "firebase deploy --only hosting",
+    "deploy": "npm run build && npm run firebase:deploy"
+  },
+  "dependencies": {
+    "@firebasegen/default-connector": "file:dataconnect-generated/js/default-connector",
+    "@headlessui/react": "^2.2.4",
+    "firebase": "^11.8.0",
+    "mapbox-gl": "^2.15.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "@mapbox/mapbox-gl-geocoder": "^5.1.2",
+    "react-router-dom": "^7.6.0",
+    "shadcn-ui": "^0.9.5",
+    "workbox-core": "^7.3.0",
+    "workbox-expiration": "^7.3.0",
+    "workbox-precaching": "^7.3.0",
+    "workbox-routing": "^7.3.0",
+    "workbox-strategies": "^7.3.0",
+    "workbox-window": "^7.3.0",
+    "zustand": "^5.0.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.0",
+    "@tailwindcss/postcss": "^4.1.7",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.4.1",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^9.25.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.4.1",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.30.1",
+    "vite": "^6.3.5",
+    "vite-plugin-pwa": "^1.0.0"
+  }
+}

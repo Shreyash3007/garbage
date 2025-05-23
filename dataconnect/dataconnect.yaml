@@ -1,0 +1,12 @@
+specVersion: "v1"
+serviceId: "garbage-watch"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "garbage-watch-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
